@@ -1,3 +1,7 @@
+module "jenkins_kp" {
+    source = "./key_pair"
+}
+
 module "jenkins-asg" {
     # ref: https://github.com/terraform-aws-modules/terraform-aws-autoscaling/tree/v8.0.0/examples
     source  = "terraform-aws-modules/autoscaling/aws//examples/complete"
