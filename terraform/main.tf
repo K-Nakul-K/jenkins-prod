@@ -1,5 +1,6 @@
 module "jenkins_kp" {
     source = "./key_pair"
+    count = var.create_key_pair ? 1 : 0
 }
 
 module "jenkins-asg" {
